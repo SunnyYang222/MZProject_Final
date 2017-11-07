@@ -1,0 +1,221 @@
+
+html,body,div,p,ul,ol,li,dl,dt,dd,form,table,tr,td,th,hr,h1,h2,h3,h4,h5,h6,img,input{
+	margin: 0;
+	padding:0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑",Arial;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+	display: block;
+}
+ul,li{
+	list-style: none;
+}
+
+/*header*/
+.header{
+	width: 100%;
+	height: 90px;
+	/*position:absolute;*/
+	
+	left: 0;
+	top: 0;
+    z-index: 11;
+}
+.logo{
+	/*margin-left: 10px;*/
+	float: left;
+}
+.nav{
+	float: right;
+	line-height: 90px;
+	margin-right: 50px;
+	
+}
+.nav li{
+	float: left;
+	padding:0 15px;
+}
+.nav li a{
+	color: #666;
+	transition: all .3s;
+}
+.nav li a:hover{
+	color:#00C3F5
+}
+
+/*banner轮播*/
+.swiper-container {
+    width: 100%;
+    /*height: 100%;*/
+   /*position: relative;*/
+} 
+.swiper-container img{
+	width: 100%;
+	height: 100%;
+}
+
+/*middle*/
+.middle{
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	background: #fff;
+	border: 1px solid #EEEEEE;
+}
+.middle_item{
+	margin:20px;
+}
+
+/*footer*/
+.flymefooter{
+	width: 100%;
+    height: 130px;
+    /*border-top: solid 1px #E5E6E7;*/
+    background-color: #fff;
+    color: black;
+}
+.flymefooter_content{
+	width: 1000px;
+    margin: 30px auto 30px;
+    /*overflow: hidden;*/
+   display: flex;
+   flex-flow: column;
+}
+.footer-layer{
+	margin-bottom: 20px;
+}
+.footer-layer_innerlink{
+	float: left;
+}
+.footer-layer_innerlink li{
+	float: left;
+	font-size: 14px;
+	padding: 11px;
+	background: url(../img/base.png) no-repeat 24px -147px;
+}
+.footer-layer_innerlink li a{
+	color: #000000;
+}
+.footer-layer_innerlink li a:hover{
+	color: #C0C0C0;
+}
+.footer-layer_innerlink .footer-innerLink_language_btn{
+	position: relative;
+	background: url(../img/base.png) no-repeat -70px -138px;
+}
+.footer-innerLink_language{
+	position: absolute;
+	left: 0;
+	top: -30px;
+	display: block;
+	width: 76px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border:1px solid  #E5E6E7;
+	display: none;
+	transition: all .5s;
+} 
+.footer-innerLink_language_btn:hover .footer-innerLink_language{
+	display: block;
+}
+.footer-layer_services{
+	float: left;
+    margin-left: 36px;
+    font-size: 14px;
+    line-height: 41px;
+}
+.service-label{
+	margin-right: 10px;
+}
+.service-tel{
+	margin-right: 20px;
+}
+.service-online{
+	display: inline-block;
+	width: 66px;
+	height: 20px;
+	line-height: 20px;
+	background:#32a5e7;
+	color: #fff;
+	border-radius: 2px;
+    text-align: center;
+}
+.service-online:hover{
+	background: #00C3F5;
+}
+.footer-layer_outerlink{
+	position: relative;
+    float: right;
+    padding-top:3px;
+}
+.footer-layer_outerlink a{
+	margin-left: 10px;
+    display: inline-block;
+    /*overflow: hidden;*/
+    width: 33px;
+    height: 33px;
+}
+.footer-layer_outerlink .icon{
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	background: url(../img/base.png) no-repeat;
+}
+.outerlink_sina .icon{
+	background-position: -218px -91px;
+}
+.outerlink_sina:hover .icon{
+	background-position: -218px -137px;
+}
+.outerlink_wechat .icon{
+	background-position: -301px -91px;
+}
+.outerlink_wechat:hover .icon{
+	background-position: -301px -137px;
+}
+.outerlink_wechat_pic{
+	position: absolute;
+    left: -80px;
+    top: -264px;
+	width: 270px;
+	height: 270px;
+	background: url(../img/weixin.png) no-repeat;
+	z-index: 10000;
+	display: none;
+}
+.outerlink_wechat i:hover .outerlink_wechat_pic{
+	
+}
+.outerlink_qzone .icon{
+	background-position: -343px -91px;
+}
+.outerlink_qzone:hover .icon{
+	background-position: -343px -137px;
+}
+
+.flymeCopyright{
+	font-size: 12px;
+	color: #a8a8a8;
+}
+.layout-footer-copyright_txt{
+	float: left;
+}
+.layout-footer-copyright_link{
+	float: left;
+	margin-left:6px ;
+	color: #a8a8a8;
+}
+.layout-footer-copyright_link:hover{
+	color: gray;
+}
